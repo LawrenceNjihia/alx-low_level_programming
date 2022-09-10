@@ -2,28 +2,25 @@
 
  
 
-void main()
+int main(void)
 
 {
 
 	    int num;
 
-	     
 
 	        printf("Enter a number: \n");
+		scanf("%d", &num);
 
-		    scanf("%d", &num);
+			if (num > 0)
+				printf("%d is positive \n", num);
+	
+			else if (num < 0)
+				printf("%d is negative \n", num);
 
-		        if (num > 0)
-
-				        printf("%d is a positive number \n", num);
-
-			    else if (num < 0)
-
-				            printf("%d is a negative number \n", num);
-
-			        else
-
-					        printf("0 is neither positive nor negative");
+			else
+				printf("is zero \n");
+		
+			return (0);
 
 }
