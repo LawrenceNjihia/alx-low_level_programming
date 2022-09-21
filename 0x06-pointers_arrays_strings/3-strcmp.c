@@ -4,7 +4,7 @@
  * _strcmp - Function comparing two strings
  * @s1: First string
  * @s2: Second string
- * Return: returns string comparison
+ * Return:
  * Returns zero if s1 == s2
  * Returns negative number if s1 < s2
  * Returns positive number if s1 > s2
