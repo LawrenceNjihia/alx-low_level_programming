@@ -3,8 +3,8 @@
  *_strncpy - function copies a string
  *Works identically to the standard library function 'strncpy'
  *@dest: storing the string copy
- *src: source string
- *n: max number of byte copied
+ *@src: source string
+ *@n: max number of byte copied
  *Return: returns string
  */
 
