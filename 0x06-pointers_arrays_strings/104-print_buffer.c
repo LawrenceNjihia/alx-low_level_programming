@@ -50,7 +50,7 @@ void print_buffer(char *b, int size)
 		{
 			print_line(b, 9, i);
 		}
-	else
+		else
 		{
 			print_line(b, size % 10 - 1, i);
 		}
@@ -58,3 +58,4 @@ void print_buffer(char *b, int size)
 	}
 	if (size == 0)
 		putchar('\n');
+}
