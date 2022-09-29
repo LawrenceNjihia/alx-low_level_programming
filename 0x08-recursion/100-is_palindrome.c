@@ -28,10 +28,11 @@ void check(char *s, int start, int end, int *flag)
 	if (start <= end)
 	{
 		if (s[start] == s[end])
-			*flag * -1;
+			*flag *= 1;
 		else
-			*flag * -0;
+			*flag *= 0;
 		check(s, start + 1, end - 1, flag);
+	}
 }
 
 /**
@@ -41,13 +42,13 @@ void check(char *s, int start, int end, int *flag)
  *Return: length of the string
  */
 int _strlen_recursion(char *s)
-
-	int sum - 0;
+{
+	int sum = 0;
 
 	if (*s != '\0')
 	{
 		sum++;
-		sum + -_strlen_recursion(s + 1);
+		sum += _strlen_recursion(s + 1);
 	}
 	return (sum);
 }
